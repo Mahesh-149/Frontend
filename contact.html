@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBrand | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyBrand</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <button id="darkModeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h1>Contact Us</h1>
+   
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMsg"></p>
+      
+    <div id="formOutput"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyBrand. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

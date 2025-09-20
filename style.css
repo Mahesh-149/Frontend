@@ -1,0 +1,234 @@
+/* Reset */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hamburger menu (hidden on desktop) */
+  .hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .cta-btn {
+    background: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .cta-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Features Section */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .feature {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #222;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 20px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .hero h1 {
+      font-size: 3.5rem;
+    }
+  }
+  .dark-mode {
+    background: #111;
+    color: #eee;
+  }
+  .dark-mode .navbar,
+  .dark-mode footer {
+    background: #000;
+  }
+  .dark-mode .feature {
+    background: #222;
+    color: #fff;
+  }
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    background: #f39c12;
+    color: white;
+    cursor: pointer;
+  }
+/* Page Content */
+.page-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .page-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #2575fc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #1a5fd0;
+  }
+  
+  #formOutput {
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 5px;
+  }
+  .testimonials {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .testimonial-container {
+    max-width: 500px;
+    margin: auto;
+    font-style: italic;
+  }
+          
